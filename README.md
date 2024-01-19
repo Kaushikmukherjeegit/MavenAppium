@@ -1,0 +1,2 @@
+# MavenAppium
+Appium Maven Project
