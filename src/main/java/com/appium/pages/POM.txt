@@ -1,0 +1,21 @@
+initElements(): initElements is a static method in Page Factory class. 
+Using the initElements method, one can initialize all the android/ios elements 
+located by @FindBy annotation.
+
+This is the point we initiated the Page Factory. Here PageFactory is a 
+class which is having a static method “public static <T> T initElements(WebDriver driver, Class<T> pageClassToProxy)” 
+This method is used to initiate the driver instance of a given class and which will return an 
+instantiated instance of the class with WebElement.
+
+AppiumFieldDecorator() which is one of an overridden constructor of the class “AppiumFieldDecorator”. 
+This constructor is used to decorate/initiate each mobile element directly as a “MobileElement” variable.
+
+In combination of PageFactory.initElements and AppiumFieldDecorator we can initiate a variable/element 
+with the help of @FindBy annotations.
+
+Android - @AndroidFindBy(xpath, className, id, uiAutomator)
+iOS - iOSFindBy(accessibilityId, xpath, className, id, predicate)
+
+Remember, one of the main advantage using Page Factory is declaring locators/elements directly as 
+a “MobileElement”. To do so it is important to initiate the driver as soon as the class is invoked 
+This is one of a main reason why we are initiating page factory in Constructor.

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 105.792 s <<< FAILURE! - in TestSuite
+WifiSettings(com.appium.test.WifiSettingsTest)  Time elapsed: 6.967 s  <<< FAILURE!
+java.lang.AssertionError: OK text is not found expected [HI] but found [OK]
+	at com.appium.test.WifiSettingsTest.WifiSettings(WifiSettingsTest.java:223)
+
+WifiSettings(com.appium.test.WifiSettingsTest)  Time elapsed: 6.846 s  <<< FAILURE!
+java.lang.AssertionError: OK text is not found expected [HI] but found [OK]
+	at com.appium.test.WifiSettingsTest.WifiSettings(WifiSettingsTest.java:223)
+
+WifiSettings(com.appium.test.WifiSettingsTest)  Time elapsed: 6.447 s  <<< FAILURE!
+java.lang.AssertionError: OK text is not found expected [HI] but found [OK]
+	at com.appium.test.WifiSettingsTest.WifiSettings(WifiSettingsTest.java:223)
+

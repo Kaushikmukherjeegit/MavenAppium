@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="105.792" tests="4" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\target\test-classes;C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\target\classes;C:\Users\kaush\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\kaush\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\kaush\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\kaush\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kaush\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.1\selenium-chrome-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.1\selenium-chromium-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.1\selenium-json-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.1\selenium-manager-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.1\selenium-firefox-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.1\selenium-devtools-v85-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.1\selenium-http-4.16.1.jar;C:\Users\kaush\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.1\selenium-safari-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.1\selenium-edge-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.1\selenium-support-4.16.1.jar;C:\Users\kaush\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\kaush\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kaush\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kaush\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kaush\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\kaush\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\kaush\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\kaush\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.1\selenium-remote-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.1\selenium-os-4.16.1.jar;C:\Users\kaush\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.1\selenium-api-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.1\selenium-java-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.1\selenium-devtools-v118-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.1\selenium-devtools-v119-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.1\selenium-devtools-v120-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.1\selenium-ie-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\kaush\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\kaush\.m2\repository\commons-validator\commons-validator\1.8.0\commons-validator-1.8.0.jar;C:\Users\kaush\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\kaush\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\kaush\.m2\repository\commons-logging\commons-logging\1.3.0\commons-logging-1.3.0.jar;C:\Users\kaush\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\kaush\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\kaush\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kaush\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\kaush\.m2\repository\org\slf4j\slf4j-simple\2.0.11\slf4j-simple-2.0.11.jar;C:\Users\kaush\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\kaush\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\kaush\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.8\rxjava-3.1.8.jar;C:\Users\kaush\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\kaush\.m2\repository\org\reactivestreams\reactive-streams-tck\1.0.4\reactive-streams-tck-1.0.4.jar;C:\Users\kaush\.m2\repository\joda-time\joda-time\2.12.5\joda-time-2.12.5.jar;C:\Users\kaush\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\kaush\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kaush\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\kaush\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kaush\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\kaush\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\kaush\.m2\repository\org\reactivestreams\reactive-streams-examples\1.0.4\reactive-streams-examples-1.0.4.jar;C:\Users\kaush\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\kaush\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\kaush\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\kaush\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.6\poi-ooxml-schemas-3.6.jar;C:\Users\kaush\.m2\repository\org\apache\geronimo\specs\geronimo-stax-api_1.0_spec\1.0\geronimo-stax-api_1.0_spec-1.0.jar;C:\Users\kaush\.m2\repository\org\apache\poi\poi\3.6\poi-3.6.jar;C:\Users\kaush\.m2\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;C:\Users\kaush\.m2\repository\org\apache\poi\poi-ooxml\3.6\poi-ooxml-3.6.jar;C:\Users\kaush\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\kaush\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Software\Eclipse202206\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\kaush\AppData\Local\Temp\surefire10577518238535868815\surefirebooter7897283934130847241.jar C:\Users\kaush\AppData\Local\Temp\surefire10577518238535868815 2024-01-19T18-10-25_115-jvmRun1 surefire17849888796090674439tmp surefire_015596462458293603822tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\target\test-classes;C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\target\classes;C:\Users\kaush\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\kaush\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\kaush\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\kaush\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\kaush\.m2\repository\io\appium\java-client\9.0.0\java-client-9.0.0.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.1\selenium-chrome-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.1\selenium-chromium-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.1\selenium-json-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.1\selenium-manager-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.1\selenium-firefox-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.1\selenium-devtools-v85-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.1\selenium-http-4.16.1.jar;C:\Users\kaush\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.1\selenium-safari-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.1\selenium-edge-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.1\selenium-support-4.16.1.jar;C:\Users\kaush\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\kaush\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kaush\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kaush\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kaush\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\kaush\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\kaush\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\kaush\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.1\selenium-remote-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\kaush\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.1\selenium-os-4.16.1.jar;C:\Users\kaush\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.1\selenium-api-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.1\selenium-java-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.1\selenium-devtools-v118-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.1\selenium-devtools-v119-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.1\selenium-devtools-v120-4.16.1.jar;C:\Users\kaush\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.1\selenium-ie-driver-4.16.1.jar;C:\Users\kaush\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\kaush\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\kaush\.m2\repository\commons-validator\commons-validator\1.8.0\commons-validator-1.8.0.jar;C:\Users\kaush\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\kaush\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\kaush\.m2\repository\commons-logging\commons-logging\1.3.0\commons-logging-1.3.0.jar;C:\Users\kaush\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\kaush\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\kaush\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kaush\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\kaush\.m2\repository\org\slf4j\slf4j-simple\2.0.11\slf4j-simple-2.0.11.jar;C:\Users\kaush\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\kaush\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\kaush\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.8\rxjava-3.1.8.jar;C:\Users\kaush\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\kaush\.m2\repository\org\reactivestreams\reactive-streams-tck\1.0.4\reactive-streams-tck-1.0.4.jar;C:\Users\kaush\.m2\repository\joda-time\joda-time\2.12.5\joda-time-2.12.5.jar;C:\Users\kaush\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\kaush\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kaush\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\kaush\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kaush\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\kaush\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\kaush\.m2\repository\org\reactivestreams\reactive-streams-examples\1.0.4\reactive-streams-examples-1.0.4.jar;C:\Users\kaush\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\kaush\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\kaush\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\kaush\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.6\poi-ooxml-schemas-3.6.jar;C:\Users\kaush\.m2\repository\org\apache\geronimo\specs\geronimo-stax-api_1.0_spec\1.0\geronimo-stax-api_1.0_spec-1.0.jar;C:\Users\kaush\.m2\repository\org\apache\poi\poi\3.6\poi-3.6.jar;C:\Users\kaush\.m2\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;C:\Users\kaush\.m2\repository\org\apache\poi\poi-ooxml\3.6\poi-ooxml-3.6.jar;C:\Users\kaush\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\kaush\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kaush"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Software\Eclipse202206\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\kaush\AppData\Local\Temp\surefire10577518238535868815\surefirebooter7897283934130847241.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.3+7"/>
+    <property name="user.name" value="kaush"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.3+7"/>
+    <property name="localRepository" value="C:\Users\kaush\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\kaush\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.3"/>
+    <property name="user.dir" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Software\Eclipse202206\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/kaush/OneDrive/Desktop/IBM_Appium_16012024/Software/Eclipse202206/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/kaush/OneDrive/Desktop/IBM_Appium_16012024/Software/Eclipse202206/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Python;C:\Python\DLLs;C:\Python\Lib;C:\Python\Scripts;C:\Driver;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11\bin;C:\Users\kaush\AppData\Local\Android\Sdk\emulator;C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools;C:\Users\kaush\AppData\Local\Android\Sdk\tools;C:\Users\kaush\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jre-1.8;C:\Program Files\Java\jre-1.8\bin;C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Software\Maven396\apache-maven-3.9.6\bin;C:\Users\kaush\AppData\Local\Microsoft\WindowsApps;C:\Users\kaush\AppData\Roaming\npm;C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Software\Eclipse202206\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.3+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="WifiSettings" classname="com.appium.test.WifiSettingsTest" time="6.967">
+    <failure message="OK text is not found expected [HI] but found [OK]" type="java.lang.AssertionError">java.lang.AssertionError: OK text is not found expected [HI] but found [OK]
+	at com.appium.test.WifiSettingsTest.WifiSettings(WifiSettingsTest.java:223)
+</failure>
+    <system-out><![CDATA[WifiSettingsTest is present in row number 1
+WifiSettingsTest has 1 columns filled with data
+WifiSettingsTest has 3 rows filled with data
+Tried to attach logging to file 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\AppiumServerLog\logAppium_Fri_Jan_19_18_10_36_IST_2024.log' but an error occurred: EBUSY: resource busy or locked, unlink 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\AppiumServerLog\logAppium_Fri_Jan_19_18_10_36_IST_2024.log'
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load plugin images...
+&amp#27;[35m[Appium]&amp#27;[39m Welcome to Appium v2.4.1
+&amp#27;[35m[Appium]&amp#27;[39m Non-default server args:
+&amp#27;[35m[Appium]&amp#27;[39m { address: &amp#27;[32m'127.0.0.1'&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   allowInsecure: [ &amp#27;[32m'adb_shell'&amp#27;[39m ],
+&amp#27;[35m[Appium]&amp#27;[39m   localTimezone: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   loglevel: &amp#27;[32m'info:debug'&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   relaxedSecurityEnabled: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   sessionOverride: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   usePlugins: [ &amp#27;[32m'images'&amp#27;[39m ] }
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver uiautomator2...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver xcuitest...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver mac2...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver espresso...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver safari...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver gecko...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver chromium...
+(node:11692) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+&amp#27;[35m[Appium]&amp#27;[39m Appium REST http interface listener started on http://127.0.0.1:4723
+&amp#27;[35m[Appium]&amp#27;[39m Available drivers:
+&amp#27;[35m[Appium]&amp#27;[39m   - uiautomator2@2.42.1 (automationName 'UiAutomator2')
+&amp#27;[35m[Appium]&amp#27;[39m   - xcuitest@5.14.0 (automationName 'XCUITest')
+&amp#27;[35m[Appium]&amp#27;[39m   - mac2@1.10.1 (automationName 'Mac2')
+&amp#27;[35m[Appium]&amp#27;[39m   - espresso@2.33.1 (automationName 'Espresso')
+&amp#27;[35m[Appium]&amp#27;[39m   - safari@3.5.9 (automationName 'Safari')
+&amp#27;[35m[Appium]&amp#27;[39m   - gecko@1.2.10 (automationName 'Gecko')
+&amp#27;[35m[Appium]&amp#27;[39m   - chromium@1.3.4 (automationName 'Chromium')
+&amp#27;[35m[Appium]&amp#27;[39m Available plugins:
+&amp#27;[35m[Appium]&amp#27;[39m   - images@3.0.1 (ACTIVE)
+&amp#27;[35m[Appium]&amp#27;[39m   - execute-driver@3.0.23
+&amp#27;[35m[Appium]&amp#27;[39m   - relaxed-caps@1.0.6
+&amp#27;[35m[Appium]&amp#27;[39m   - universal-xml@1.0.16
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/status&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getStatus': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getStatus'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getStatus'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /status &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m11 ms - 110&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\kaush\\OneDrive\\Desktop\\IBM_Appium_16012024\\Workspace_Appium\\AppiumAndroidNativeMaven\\ApiDemos-debug.apk","appium:automationName":"UiAutomator2","appium:deviceName":"Pixel7R","appium:newCommandTimeout":"200","appium:platformVersion":"11","appium:udid":"emulator-5554","platformName":"ANDROID"}}}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'createSession': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'createSession'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'createSession'
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+&amp#27;[35m[Appium]&amp#27;[39m The 'uiautomator2' driver was installed and matched caps.
+&amp#27;[35m[Appium]&amp#27;[39m Will require it at C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Appium v2.4.1 creating new AndroidUiautomator2Driver (v2.42.1) session
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Appium's BaseDriver version is 9.5.0
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m AndroidUiautomator2Driver's BaseDriver version is 9.5.0
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Explicitly enabling use of insecure features:
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m     adb_shell
+&amp#27;[38;5;48m[BaseDriver]&amp#27;[0m Number capability passed in as string. Functionality may be compromised.
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518]&amp#27;[0m Capability 'newCommandTimeout' changed from string ('200') to integer (200). This may cause unexpected behavior
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Session created with session id: 6e2718ef-9662-497c-8396-2c44d5575756
+&amp#27;[38;5;48m[BaseDriver]&amp#27;[0m Using local app 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\ApiDemos-debug.apk'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Found 1 'build-tools' folders under 'C:\Users\kaush\AppData\Local\Android\Sdk' (newest first):
+&amp#27;[38;5;64m[ADB]&amp#27;[0m     C:\Users\kaush\AppData\Local\Android\Sdk\build-tools\34.0.0
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Retrieving device list
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Using device: emulator-5554
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Getting device platform version
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Relaxing hidden api policy
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Package name: 'io.appium.android.apis'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'apksigner.jar' from 'C:\Users\kaush\AppData\Local\Android\Sdk\build-tools\34.0.0\lib\apksigner.jar'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.3.apk' is signed with the default certificate
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Server packages are not going to be (re)installed
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\ApiDemos-debug.apk' is signed with a non-default certificate
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Performing fast reset on 'io.appium.android.apis'
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Starting UIAutomator2 server 6.0.3
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Using UIAutomator2 server from 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.3.apk' and test from 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Waiting up to 30000ms for UiAutomator2 to be online...
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Determined the downstream protocol as 'W3C'
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Screen already unlocked, doing nothing
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Starting 'io.appium.android.apis/io.appium.android.apis.ApiDemos and waiting for 'io.appium.android.apis/io.appium.android.apis.ApiDemos'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m New AndroidUiautomator2Driver session created successfully, session 6e2718ef-9662-497c-8396-2c44d5575756 added to master session list
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Promoting 1 sessionless plugins to be attached to session ID 6e2718ef-9662-497c-8396-2c44d5575756
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m8957 ms - 1158&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m352 ms - 142616&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/timeouts&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"implicit":20000}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'timeouts': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'timeouts'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'timeouts'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/timeouts &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m3 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m416 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0140-ffff-ffff00000012/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0140-ffff-ffff00000012/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m22 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m59 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0140-ffff-ffff00000012/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0140-ffff-ffff00000012/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m16 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m4 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m61 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0140-ffff-ffff00000012/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0140-ffff-ffff00000012"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0140-ffff-ffff00000012/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m977 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m270 ms - 118668&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m44 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0141-ffff-ffff00000021/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0141-ffff-ffff00000021/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m15 ms - 38&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m40 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0141-ffff-ffff00000021/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0141-ffff-ffff00000021/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 38&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m3 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc ='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m42 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0141-ffff-ffff00000021/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0141-ffff-ffff00000021"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0141-ffff-ffff00000021/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m907 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m244 ms - 64108&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/checkbox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m29 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000044/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000044/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m14 ms - 31&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/checkbox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m20 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000044/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000044/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 31&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m2 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"class name","value":"android.widget.CheckBox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m20 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000044/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0142-ffff-ffff00000044"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000044/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m646 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m202 ms - 65424&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m54 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000049/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000049/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m14 ms - 25&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m59 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000049/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000049/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m13 ms - 25&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m1 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m45 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000049/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0142-ffff-ffff00000049"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0142-ffff-ffff00000049/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m692 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m262 ms - 83312&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m351 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff0000005f/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff0000005f/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 27&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m16 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff0000005f/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff0000005f/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 27&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m1 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m16 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff0000005f/value&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0143-ffff-ffff0000005f","text":"Kaushik Mukherjee","value":["K","a","u","s","h","i","k"," ","M","u","k","h","e","r","j","e","e"]}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'setValue': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'setValue'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'setValue'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff0000005f/value &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m39 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m268 ms - 92728&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/button1"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m213 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff00000065/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff00000065/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m44 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/button1"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/6e2718ef-9662-497c-8396-2c44d5575756/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m34 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff00000065/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/element/00000000-0000-0143-ffff-ffff00000065/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m11 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="WifiSettings" classname="com.appium.test.WifiSettingsTest" time="6.846">
+    <failure message="OK text is not found expected [HI] but found [OK]" type="java.lang.AssertionError">java.lang.AssertionError: OK text is not found expected [HI] but found [OK]
+	at com.appium.test.WifiSettingsTest.WifiSettings(WifiSettingsTest.java:223)
+</failure>
+    <system-out><![CDATA[&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/6e2718ef-9662-497c-8396-2c44d5575756/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m215 ms - 92728&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mDELETE&amp#27;[39m &amp#27;[37m/session/6e2718ef-9662-497c-8396-2c44d5575756&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugins which can handle cmd 'deleteSession': images
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Plugin images is now handling cmd 'deleteSession'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Executing default handling behavior for command 'deleteSession'
+&amp#27;[38;5;16m[AppiumDriver@a3d1]&amp#27;[0m Removing session 6e2718ef-9662-497c-8396-2c44d5575756 from our master session list
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a518 (6e2718ef)]&amp#27;[0m Restoring hidden api policy to the device default configuration
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- DELETE /session/6e2718ef-9662-497c-8396-2c44d5575756 &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m642 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+Appium Server Stopped
+Tried to attach logging to file 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\AppiumServerLog\logAppium_Fri_Jan_19_18_10_36_IST_2024.log' but an error occurred: EBUSY: resource busy or locked, unlink 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\AppiumServerLog\logAppium_Fri_Jan_19_18_10_36_IST_2024.log'
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load plugin images...
+&amp#27;[35m[Appium]&amp#27;[39m Welcome to Appium v2.4.1
+&amp#27;[35m[Appium]&amp#27;[39m Non-default server args:
+&amp#27;[35m[Appium]&amp#27;[39m { address: &amp#27;[32m'127.0.0.1'&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   allowInsecure: [ &amp#27;[32m'adb_shell'&amp#27;[39m ],
+&amp#27;[35m[Appium]&amp#27;[39m   localTimezone: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   loglevel: &amp#27;[32m'info:debug'&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   relaxedSecurityEnabled: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   sessionOverride: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   usePlugins: [ &amp#27;[32m'images'&amp#27;[39m ] }
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver uiautomator2...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver xcuitest...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver mac2...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver espresso...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver safari...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver gecko...
+(node:11420) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver chromium...
+&amp#27;[35m[Appium]&amp#27;[39m Appium REST http interface listener started on http://127.0.0.1:4723
+&amp#27;[35m[Appium]&amp#27;[39m Available drivers:
+&amp#27;[35m[Appium]&amp#27;[39m   - uiautomator2@2.42.1 (automationName 'UiAutomator2')
+&amp#27;[35m[Appium]&amp#27;[39m   - xcuitest@5.14.0 (automationName 'XCUITest')
+&amp#27;[35m[Appium]&amp#27;[39m   - mac2@1.10.1 (automationName 'Mac2')
+&amp#27;[35m[Appium]&amp#27;[39m   - espresso@2.33.1 (automationName 'Espresso')
+&amp#27;[35m[Appium]&amp#27;[39m   - safari@3.5.9 (automationName 'Safari')
+&amp#27;[35m[Appium]&amp#27;[39m   - gecko@1.2.10 (automationName 'Gecko')
+&amp#27;[35m[Appium]&amp#27;[39m   - chromium@1.3.4 (automationName 'Chromium')
+&amp#27;[35m[Appium]&amp#27;[39m Available plugins:
+&amp#27;[35m[Appium]&amp#27;[39m   - images@3.0.1 (ACTIVE)
+&amp#27;[35m[Appium]&amp#27;[39m   - execute-driver@3.0.23
+&amp#27;[35m[Appium]&amp#27;[39m   - relaxed-caps@1.0.6
+&amp#27;[35m[Appium]&amp#27;[39m   - universal-xml@1.0.16
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/status&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getStatus': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getStatus'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getStatus'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /status &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m9 ms - 110&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\kaush\\OneDrive\\Desktop\\IBM_Appium_16012024\\Workspace_Appium\\AppiumAndroidNativeMaven\\ApiDemos-debug.apk","appium:automationName":"UiAutomator2","appium:deviceName":"Pixel7R","appium:newCommandTimeout":"200","appium:platformVersion":"11","appium:udid":"emulator-5554","platformName":"ANDROID"}}}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'createSession': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'createSession'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'createSession'
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+&amp#27;[35m[Appium]&amp#27;[39m The 'uiautomator2' driver was installed and matched caps.
+&amp#27;[35m[Appium]&amp#27;[39m Will require it at C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Appium v2.4.1 creating new AndroidUiautomator2Driver (v2.42.1) session
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Appium's BaseDriver version is 9.5.0
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m AndroidUiautomator2Driver's BaseDriver version is 9.5.0
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Explicitly enabling use of insecure features:
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m     adb_shell
+&amp#27;[38;5;48m[BaseDriver]&amp#27;[0m Number capability passed in as string. Functionality may be compromised.
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb]&amp#27;[0m Capability 'newCommandTimeout' changed from string ('200') to integer (200). This may cause unexpected behavior
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Session created with session id: ad09cfe4-1d20-44b9-a5bf-18f535523725
+&amp#27;[38;5;48m[BaseDriver]&amp#27;[0m Using local app 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\ApiDemos-debug.apk'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Found 1 'build-tools' folders under 'C:\Users\kaush\AppData\Local\Android\Sdk' (newest first):
+&amp#27;[38;5;64m[ADB]&amp#27;[0m     C:\Users\kaush\AppData\Local\Android\Sdk\build-tools\34.0.0
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Retrieving device list
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Using device: emulator-5554
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Getting device platform version
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Relaxing hidden api policy
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Package name: 'io.appium.android.apis'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'apksigner.jar' from 'C:\Users\kaush\AppData\Local\Android\Sdk\build-tools\34.0.0\lib\apksigner.jar'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.3.apk' is signed with the default certificate
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Server packages are not going to be (re)installed
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\ApiDemos-debug.apk' is signed with a non-default certificate
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Performing fast reset on 'io.appium.android.apis'
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Starting UIAutomator2 server 6.0.3
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Using UIAutomator2 server from 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.3.apk' and test from 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Waiting up to 30000ms for UiAutomator2 to be online...
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Determined the downstream protocol as 'W3C'
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Screen already unlocked, doing nothing
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Starting 'io.appium.android.apis/io.appium.android.apis.ApiDemos and waiting for 'io.appium.android.apis/io.appium.android.apis.ApiDemos'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m New AndroidUiautomator2Driver session created successfully, session ad09cfe4-1d20-44b9-a5bf-18f535523725 added to master session list
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Promoting 1 sessionless plugins to be attached to session ID ad09cfe4-1d20-44b9-a5bf-18f535523725
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m7131 ms - 1158&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m361 ms - 98224&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/timeouts&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"implicit":20000}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'timeouts': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'timeouts'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'timeouts'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/timeouts &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m4 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m489 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014e-ffff-ffff00000012/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014e-ffff-ffff00000012/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m38 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m70 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014e-ffff-ffff00000012/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014e-ffff-ffff00000012/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m37 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m5 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m78 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014e-ffff-ffff00000012/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-014e-ffff-ffff00000012"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014e-ffff-ffff00000012/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m933 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m230 ms - 117932&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m43 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014f-ffff-ffff00000021/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014f-ffff-ffff00000021/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 38&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m38 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014f-ffff-ffff00000021/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014f-ffff-ffff00000021/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m14 ms - 38&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m4 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc ='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m35 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014f-ffff-ffff00000021/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-014f-ffff-ffff00000021"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-014f-ffff-ffff00000021/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m899 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m205 ms - 63376&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/checkbox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m21 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000043/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000043/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m17 ms - 31&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/checkbox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m19 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000043/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000043/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m11 ms - 31&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m2 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"class name","value":"android.widget.CheckBox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m17 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000043/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0150-ffff-ffff00000043"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000043/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m647 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m237 ms - 64624&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m47 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000048/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000048/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m13 ms - 25&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m38 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000048/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000048/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m16 ms - 25&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m2 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m41 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000048/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0150-ffff-ffff00000048"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0150-ffff-ffff00000048/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m842 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m332 ms - 83312&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m24 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff0000005f/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff0000005f/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m17 ms - 27&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m18 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff0000005f/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff0000005f/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m11 ms - 27&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m2 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m17 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff0000005f/value&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-0151-ffff-ffff0000005f","text":"Sam Mendes","value":["S","a","m"," ","M","e","n","d","e","s"]}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'setValue': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'setValue'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'setValue'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff0000005f/value &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m30 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m239 ms - 92464&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/button1"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m275 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff00000065/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff00000065/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m48 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/button1"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m40 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff00000065/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/element/00000000-0000-0151-ffff-ffff00000065/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m39 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
+  </testcase>
+  <testcase name="WifiSettings" classname="com.appium.test.WifiSettingsTest" time="6.447">
+    <failure message="OK text is not found expected [HI] but found [OK]" type="java.lang.AssertionError">java.lang.AssertionError: OK text is not found expected [HI] but found [OK]
+	at com.appium.test.WifiSettingsTest.WifiSettings(WifiSettingsTest.java:223)
+</failure>
+    <system-out><![CDATA[&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/ad09cfe4-1d20-44b9-a5bf-18f535523725/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m234 ms - 92464&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mDELETE&amp#27;[39m &amp#27;[37m/session/ad09cfe4-1d20-44b9-a5bf-18f535523725&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugins which can handle cmd 'deleteSession': images
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Plugin images is now handling cmd 'deleteSession'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Executing default handling behavior for command 'deleteSession'
+&amp#27;[38;5;16m[AppiumDriver@95ad]&amp#27;[0m Removing session ad09cfe4-1d20-44b9-a5bf-18f535523725 from our master session list
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@7bfb (ad09cfe4)]&amp#27;[0m Restoring hidden api policy to the device default configuration
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- DELETE /session/ad09cfe4-1d20-44b9-a5bf-18f535523725 &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m396 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+Appium Server Stopped
+Tried to attach logging to file 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\AppiumServerLog\logAppium_Fri_Jan_19_18_10_36_IST_2024.log' but an error occurred: EBUSY: resource busy or locked, unlink 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\AppiumServerLog\logAppium_Fri_Jan_19_18_10_36_IST_2024.log'
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load plugin images...
+&amp#27;[35m[Appium]&amp#27;[39m Welcome to Appium v2.4.1
+&amp#27;[35m[Appium]&amp#27;[39m Non-default server args:
+&amp#27;[35m[Appium]&amp#27;[39m { address: &amp#27;[32m'127.0.0.1'&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   allowInsecure: [ &amp#27;[32m'adb_shell'&amp#27;[39m ],
+&amp#27;[35m[Appium]&amp#27;[39m   localTimezone: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   loglevel: &amp#27;[32m'info:debug'&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   relaxedSecurityEnabled: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   sessionOverride: &amp#27;[33mtrue&amp#27;[39m,
+&amp#27;[35m[Appium]&amp#27;[39m   usePlugins: [ &amp#27;[32m'images'&amp#27;[39m ] }
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver uiautomator2...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver xcuitest...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver mac2...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver espresso...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver safari...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver gecko...
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to load driver chromium...
+(node:9756) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+&amp#27;[35m[Appium]&amp#27;[39m Appium REST http interface listener started on http://127.0.0.1:4723
+&amp#27;[35m[Appium]&amp#27;[39m Available drivers:
+&amp#27;[35m[Appium]&amp#27;[39m   - uiautomator2@2.42.1 (automationName 'UiAutomator2')
+&amp#27;[35m[Appium]&amp#27;[39m   - xcuitest@5.14.0 (automationName 'XCUITest')
+&amp#27;[35m[Appium]&amp#27;[39m   - mac2@1.10.1 (automationName 'Mac2')
+&amp#27;[35m[Appium]&amp#27;[39m   - espresso@2.33.1 (automationName 'Espresso')
+&amp#27;[35m[Appium]&amp#27;[39m   - safari@3.5.9 (automationName 'Safari')
+&amp#27;[35m[Appium]&amp#27;[39m   - gecko@1.2.10 (automationName 'Gecko')
+&amp#27;[35m[Appium]&amp#27;[39m   - chromium@1.3.4 (automationName 'Chromium')
+&amp#27;[35m[Appium]&amp#27;[39m Available plugins:
+&amp#27;[35m[Appium]&amp#27;[39m   - images@3.0.1 (ACTIVE)
+&amp#27;[35m[Appium]&amp#27;[39m   - execute-driver@3.0.23
+&amp#27;[35m[Appium]&amp#27;[39m   - relaxed-caps@1.0.6
+&amp#27;[35m[Appium]&amp#27;[39m   - universal-xml@1.0.16
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/status&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getStatus': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getStatus'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getStatus'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /status &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m7 ms - 110&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\kaush\\OneDrive\\Desktop\\IBM_Appium_16012024\\Workspace_Appium\\AppiumAndroidNativeMaven\\ApiDemos-debug.apk","appium:automationName":"UiAutomator2","appium:deviceName":"Pixel7R","appium:newCommandTimeout":"200","appium:platformVersion":"11","appium:udid":"emulator-5554","platformName":"ANDROID"}}}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'createSession': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'createSession'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'createSession'
+&amp#27;[35m[Appium]&amp#27;[39m Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+&amp#27;[35m[Appium]&amp#27;[39m The 'uiautomator2' driver was installed and matched caps.
+&amp#27;[35m[Appium]&amp#27;[39m Will require it at C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Appium v2.4.1 creating new AndroidUiautomator2Driver (v2.42.1) session
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Appium's BaseDriver version is 9.5.0
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m AndroidUiautomator2Driver's BaseDriver version is 9.5.0
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Explicitly enabling use of insecure features:
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m     adb_shell
+&amp#27;[38;5;48m[BaseDriver]&amp#27;[0m Number capability passed in as string. Functionality may be compromised.
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478]&amp#27;[0m Capability 'newCommandTimeout' changed from string ('200') to integer (200). This may cause unexpected behavior
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Session created with session id: 0e4fdd83-1e69-4fdc-b471-44451a10ecc3
+&amp#27;[38;5;48m[BaseDriver]&amp#27;[0m Using local app 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\ApiDemos-debug.apk'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Found 1 'build-tools' folders under 'C:\Users\kaush\AppData\Local\Android\Sdk' (newest first):
+&amp#27;[38;5;64m[ADB]&amp#27;[0m     C:\Users\kaush\AppData\Local\Android\Sdk\build-tools\34.0.0
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Retrieving device list
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Using device: emulator-5554
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'adb.exe' from 'C:\Users\kaush\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Getting device platform version
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Relaxing hidden api policy
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Package name: 'io.appium.android.apis'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Using 'apksigner.jar' from 'C:\Users\kaush\AppData\Local\Android\Sdk\build-tools\34.0.0\lib\apksigner.jar'
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.3.apk' is signed with the default certificate
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Server packages are not going to be (re)installed
+&amp#27;[38;5;64m[ADB]&amp#27;[0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+&amp#27;[38;5;64m[ADB]&amp#27;[0m 'C:\Users\kaush\OneDrive\Desktop\IBM_Appium_16012024\Workspace_Appium\AppiumAndroidNativeMaven\ApiDemos-debug.apk' is signed with a non-default certificate
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Performing fast reset on 'io.appium.android.apis'
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Starting UIAutomator2 server 6.0.3
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Using UIAutomator2 server from 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.3.apk' and test from 'C:\Users\kaush\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Waiting up to 30000ms for UiAutomator2 to be online...
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m socket hang up
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Determined the downstream protocol as 'W3C'
+&amp#27;[38;5;80m[AndroidDriver]&amp#27;[0m Screen already unlocked, doing nothing
+&amp#27;[38;5;32m[AndroidUiautomator2Driver@a478 (0e4fdd83)]&amp#27;[0m Starting 'io.appium.android.apis/io.appium.android.apis.ApiDemos and waiting for 'io.appium.android.apis/io.appium.android.apis.ApiDemos'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m New AndroidUiautomator2Driver session created successfully, session 0e4fdd83-1e69-4fdc-b471-44451a10ecc3 added to master session list
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Promoting 1 sessionless plugins to be attached to session ID 0e4fdd83-1e69-4fdc-b471-44451a10ecc3
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m6710 ms - 1158&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m323 ms - 98176&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/timeouts&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"implicit":20000}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'timeouts': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'timeouts'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'timeouts'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/timeouts &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m3 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m491 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015c-ffff-ffff00000012/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015c-ffff-ffff00000012/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m18 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m67 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015c-ffff-ffff00000012/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015c-ffff-ffff00000012/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m15 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m4 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc='Preference']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m62 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015c-ffff-ffff00000012/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-015c-ffff-ffff00000012"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015c-ffff-ffff00000012/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m909 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m258 ms - 117932&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m42 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015d-ffff-ffff00000021/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015d-ffff-ffff00000021/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m13 ms - 38&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m45 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015d-ffff-ffff00000021/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015d-ffff-ffff00000021/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m13 ms - 38&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m3 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@content-desc ='3. Preference dependencies']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m44 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015d-ffff-ffff00000021/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-015d-ffff-ffff00000021"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015d-ffff-ffff00000021/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m882 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m252 ms - 63376&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/checkbox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m22 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000043/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000043/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m18 ms - 31&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/checkbox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m20 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000043/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000043/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 31&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m2 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"class name","value":"android.widget.CheckBox"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m18 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000043/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-015e-ffff-ffff00000043"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000043/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m639 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m229 ms - 64624&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m49 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000048/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000048/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 25&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m40 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000048/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000048/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 25&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m1 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"xpath","value":"//android.widget.TextView[@text='WiFi settings']"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m43 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000048/click&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-015e-ffff-ffff00000048"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'click': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'click'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'click'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015e-ffff-ffff00000048/click &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m685 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m259 ms - 83312&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m28 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff0000005f/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff0000005f/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m14 ms - 27&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m17 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff0000005f/attribute/resource-id&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getAttribute': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getAttribute'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getAttribute'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff0000005f/attribute/resource-id &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m11 ms - 27&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getCurrentContext': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getCurrentContext'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getCurrentContext'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/context &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m3 ms - 22&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/edit"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m24 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff0000005f/value&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"id":"00000000-0000-015f-ffff-ffff0000005f","text":"Peter M","value":["P","e","t","e","r"," ","M"]}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'setValue': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'setValue'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'setValue'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff0000005f/value &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m25 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getScreenshot': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getScreenshot'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getScreenshot'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/screenshot &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m245 ms - 87424&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/button1"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m245 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff00000065/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff00000065/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m12 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mPOST&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{"using":"id","value":"android:id/button1"}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'findElement': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'findElement'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'findElement'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- POST /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m41 ms - 137&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m-->&amp#27;[39m &amp#27;[37mGET&amp#27;[39m &amp#27;[37m/session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff00000065/text&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m{}&amp#27;[39m
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugins which can handle cmd 'getText': images
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Plugin images is now handling cmd 'getText'
+&amp#27;[38;5;16m[AppiumDriver@e099]&amp#27;[0m Executing default handling behavior for command 'getText'
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[37m<-- GET /session/0e4fdd83-1e69-4fdc-b471-44451a10ecc3/element/00000000-0000-015f-ffff-ffff00000065/text &amp#27;[39m&amp#27;[32m200&amp#27;[39m &amp#27;[90m40 ms - 14&amp#27;[39m
+&amp#27;[38;5;0m[HTTP]&amp#27;[0m &amp#27;[90m&amp#27;[39m
+]]></system-out>
+  </testcase>
+  <testcase name="DateWidgetPageActivityPackage" classname="com.appium.test.DataWidgetsPageActivityPackageTest" time="15.066"/>
+</testsuite>

@@ -1,0 +1,10 @@
+com\appium\pages\InlinePage.class
+com\appium\base\Base.class
+com\appium\pages\PreferencePage.class
+com\appium\utilities\Utilities.class
+com\appium\utilities\Xls_Reader.class
+com\appium\utilities\ExtentManager.class
+com\appium\config\DataProviderData.class
+com\appium\pages\LandingPage.class
+com\appium\utilities\ExcelFunction.class
+com\appium\pages\PreferenceDependenciesPage.class
